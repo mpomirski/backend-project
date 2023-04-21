@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from src.models.minmax_rate_difference import MinmaxRateDifference
+from src.models.max_rate_difference import MaxRateDifference
 from src.models.minmax_rates import MinmaxRates
 from src.utils.service import handle_response
 
@@ -28,7 +28,7 @@ async def minmax(currency, last_quotations):
     return {'min': min_value, 'max': max_value}
 
 
-@app.get('/exchanges/differences/{currency}/{last_quotations}', response_model=MinmaxRateDifference)
+@app.get('/exchanges/differences/{currency}/{last_quotations}', response_model=MaxRateDifference)
 async def differences(currency, last_quotations):
     url = f'https://api.nbp.pl/api/exchangerates/rates/c/{currency}/last/{last_quotations}/?format=json'
 
@@ -37,6 +37,5 @@ async def differences(currency, last_quotations):
     bid_ask_diffs = [rate['ask'] - rate['bid'] for rate in rates]
     bid_ask_diffs = [round(diff, 6) for diff in bid_ask_diffs]
     max_diff = max(bid_ask_diffs)
-    min_diff = min(bid_ask_diffs)
 
-    return {'min': min_diff, 'max': max_diff}
+    return {'max': max_diff}
