@@ -41,7 +41,7 @@ The REST API to the example app is described below.
 
 ### Request
 
-`GET /exchanges/minmax/{currency}/{N}}`
+`GET /exchanges/minmax/{currency}/{N}`
 
     curl http://127.0.0.1:8000/exchanges/minmax/gbp/100
 
