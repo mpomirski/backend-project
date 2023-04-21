@@ -1,3 +1,4 @@
 Lib/
 .vscode/settings.json
 Scripts/
+*.pyc
