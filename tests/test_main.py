@@ -36,16 +36,16 @@ def test_get_minmax_by_currency_and_date_range_too_big():
     assert response.status_code == 400
 
 
-def test_get_minmax_bid_differences_by_currency():
+def test_get_max_bid_differences_by_currency():
     response = client.get('/exchanges/differences/gbp/100')
     assert response.status_code == 200
 
 
-def test_get_minmax_bid_differences_by_currency_bad_currency():
-    response = client.get('/exchanges/minmax/aaa/100')
+def test_get_max_bid_differences_by_currency_bad_currency():
+    response = client.get('/exchanges/differences/aaa/100')
     assert response.status_code == 404
 
 
-def test_get_minmax_bid_differences_by_currency_range_too_big():
-    response = client.get('/exchanges/minmax/gbp/256')
+def test_get_max_bid_differences_by_currency_range_too_big():
+    response = client.get('/exchanges/differences/gbp/256')
     assert response.status_code == 400
