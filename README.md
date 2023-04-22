@@ -19,6 +19,8 @@ This is a simple REST API providing access to currency data
 
 The REST API to the example app is described below.
 
+After deployment, documentation avaliable also at http://127.0.0.1:8000/docs
+
 ## Given a date (formatted YYYY-MM-DD) and a currency code, provides its average exchange rate
 
 ### Request
