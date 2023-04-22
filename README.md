@@ -2,6 +2,10 @@
 
 This is a simple REST API providing access to currency data
 
+## Docker
+
+    docker build -t web-api .
+    docker run --publish 80:80 web-api
 
 ## Install
 
