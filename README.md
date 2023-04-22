@@ -1,4 +1,10 @@
 # REST API example application
+ <a href="#">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/languages/python.svg" alt="python badge" style="vertical-align:top margin:6px 4px">
+  </a>
+   <a href="https://starfish-app-urx9y.ondigitalocean.app/docs  ">
+    <img src="https://raw.githubusercontent.com/MikeCodesDotNET/ColoredBadges/master/svg/dev/services/digitalocean.svg" alt="digitalocean badge" style="vertical-align:top margin:6px 4px">
+  </a>  
 
 This is a simple REST API providing access to currency data
 
