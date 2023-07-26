@@ -8,15 +8,6 @@
 
 This is a simple REST API providing access to currency data
 
-# Check it out at
-
-https://starfish-app-urx9y.ondigitalocean.app/docs  
-
-https://starfish-app-urx9y.ondigitalocean.app/exchanges/GBP/2023-01-02
-
-https://starfish-app-urx9y.ondigitalocean.app/exchanges/minmax/gbp/100
-
-https://starfish-app-urx9y.ondigitalocean.app/exchanges/differences/gbp/100
 
 ## Docker
 
